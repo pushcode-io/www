@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 781.53 502.37">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: Campton-SemiBold, Campton;
+        font-size: 136.87px;
+        font-weight: 600;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill: #007aff;
+      }
+
+      .cls-2, .cls-4 {
+        fill-rule: evenodd;
+      }
+
+      .cls-5 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3 {
+        stroke: #007aff;
+        stroke-miterlimit: 22.93;
+        stroke-width: .57px;
+      }
+
+      .cls-4 {
+        fill: #036fe2;
+      }
+
+      .cls-6 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-7 {
+        letter-spacing: 0em;
+      }
+
+      .cls-8 {
+        letter-spacing: 0em;
+      }
+
+      .cls-9 {
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="cls-2" d="M334.71,185.9h131.63c5.93,0,8.9-6.05,8.9-18.14s-2.97-18.48-8.9-18.48h-131.63v36.62Z"/>
+    <polygon class="cls-4" points="219.91 228.94 295.1 309.58 293.61 229.16 219.91 228.94"/>
+    <path class="cls-2" d="M514.06,167.76c0,15.74-4.45,29.12-13,40.39-9.46,12.46-21.69,18.82-36.97,18.82h-129.38v80.71h195.61V56.88H248.66v27.08h-28.63v45.65h10.47v23.16h-10.47v33.14h73.62v-77.7h170.45c15.29,0,27.61,6.28,36.97,18.83,8.67,11.41,13,24.99,13,40.73h0ZM250.75,87.41h15.34v15.34h-15.34v-15.34Z"/>
+    <rect class="cls-3" x="165.94" y=".28" width="42.54" height="42.54"/>
+    <rect class="cls-3" x="237.79" y="2.17" width="23.16" height="23.16"/>
+    <rect class="cls-3" x="178.46" y="100.73" width="23.17" height="23.16"/>
+    <rect class="cls-3" x="165.94" y="60.31" width="23.16" height="23.16"/>
+  </g>
+  <text class="cls-1" transform="translate(1.35 467.2)"><tspan class="cls-7" x="0" y="0">p</tspan><tspan x="83.22" y="0">us</tspan><tspan class="cls-8" x="235.01" y="0">h</tspan><tspan class="cls-9" x="316.59" y="0">co</tspan><tspan class="cls-8" x="474.54" y="0">d</tspan><tspan class="cls-6" x="557.76" y="0">e</tspan><tspan x="633.04" y="0">.</tspan><tspan class="cls-8" x="663.56" y="0">i</tspan><tspan class="cls-5" x="699.69" y="0">o</tspan></text>
+</svg>

@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pushcode — Fast, Private File Sharing</title>
+    <meta
+      name="description"
+      content="Pushcode is a cross‑platform file sharing system that uses short codes to keep transfers fast and private. Available on iOS, iPadOS, macOS, Windows, and web."
+    />
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="img/favicon.ico" sizes="any" />
+    <link rel="icon" href="img/favicon-32.png" type="image/png" sizes="32x32" />
+    <link rel="icon" href="img/favicon-16.png" type="image/png" sizes="16x16" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-orb orb-a" aria-hidden="true"></div>
+    <div class="bg-orb orb-b" aria-hidden="true"></div>
+    <div class="bg-grid" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="https://pushcode.io">
+        <img class="brand-logo" src="img/pc_logo_iso_trans.svg" alt="Pushcode logo" />
+        <span class="brand-name">pushcode.io</span>
+      </a>
+      <nav class="nav">
+        <a href="#download" data-i18n="nav.download">Download</a>
+        <a href="#how" data-i18n="nav.how">How it works</a>
+        <a href="#security" data-i18n="nav.security">Security</a>
+        <a href="#platforms" data-i18n="nav.platforms">Platforms</a>
+      </nav>
+      <div class="header-actions">
+        <div class="lang-switch">
+          <label class="sr-only" for="lang-select" data-i18n="nav.langLabel">Language</label>
+          <select id="lang-select" class="lang-select" aria-label="Language">
+            <option value="en">EN</option>
+            <option value="de">DE</option>
+            <option value="fr">FR</option>
+          </select>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="hero.eyebrow">Fast, private file handoffs</p>
+          <h1 data-i18n="hero.title">Send a file with a short code, not a long link.</h1>
+          <p class="lead" data-i18n="hero.lead">
+            Pushcode makes sharing feel simple and safe. Create a six‑character
+            code, share it, and your file arrives securely. Senders sign in, and
+            only your device can open the file.
+          </p>
+          <div class="hero-actions">
+            <a class="cta primary" href="https://app.pushcode.io" target="_blank" rel="noopener noreferrer" data-i18n="hero.ctaPrimary">Open the web app</a>
+            <a class="cta secondary" href="#download" data-i18n="hero.ctaSecondary">Download the apps</a>
+          </div>
+          <div class="meta-row">
+            <div>
+              <span class="meta-label" data-i18n="hero.meta1Label">Short‑lived</span>
+              <span class="meta-value" data-i18n="hero.meta1Value">Codes expire fast</span>
+            </div>
+            <div>
+              <span class="meta-label" data-i18n="hero.meta2Label">Easy to share</span>
+              <span class="meta-value" data-i18n="hero.meta2Value">Six characters</span>
+            </div>
+            <div>
+              <span class="meta-label" data-i18n="hero.meta3Label">Works everywhere</span>
+              <span class="meta-value" data-i18n="hero.meta3Value">iOS · iPadOS · macOS · Windows · Web</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="pushcode-tile">
+            <span class="tile-label" data-i18n="hero.tileLabel">ACTIVE PUSHCODE</span>
+            <div class="pushcode">A B C 1 2 3</div>
+            <span class="tile-note" data-i18n="hero.tileNote">Tap to copy · expires in 58:14</span>
+          </div>
+          <div class="status-panel">
+            <div class="status-row">
+              <span class="pulse"></span>
+              <div>
+                <h4 data-i18n="hero.status1Title">Waiting for the file</h4>
+                <p data-i18n="hero.status1Body">The sender signs in and uploads using your code.</p>
+              </div>
+            </div>
+            <div class="status-row">
+              <span class="dot"></span>
+              <div>
+                <h4 data-i18n="hero.status2Title">Locked before it leaves</h4>
+                <p data-i18n="hero.status2Body">Your file stays private from start to finish.</p>
+              </div>
+            </div>
+            <div class="status-row">
+              <span class="dot"></span>
+              <div>
+                <h4 data-i18n="hero.status3Title">Ready when you are</h4>
+                <p data-i18n="hero.status3Body">Download once, then it’s gone.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="download" class="section download highlight">
+        <div class="section-heading">
+          <h2 data-i18n="download.title">Get Pushcode on every device.</h2>
+          <p data-i18n="download.subtitle">Download the apps so you’re ready the moment a file arrives.</p>
+        </div>
+        <div class="download-grid">
+          <a class="download-card appstore" href="https://app.pushcode.io">
+            <div class="download-icon" aria-hidden="true"></div>
+            <div>
+              <span class="download-label" data-i18n="download.iosLabel">iOS & iPadOS</span>
+              <span class="download-title" data-i18n="download.iosTitle">Download on the App Store</span>
+            </div>
+            <span class="download-cta" data-i18n="download.cta">Download</span>
+          </a>
+          <a class="download-card mac" href="https://app.pushcode.io">
+            <div class="download-icon" aria-hidden="true">⌘</div>
+            <div>
+              <span class="download-label" data-i18n="download.macLabel">macOS</span>
+              <span class="download-title" data-i18n="download.macTitle">Download for Mac</span>
+            </div>
+            <span class="download-cta" data-i18n="download.cta">Download</span>
+          </a>
+          <a class="download-card windows" href="https://app.pushcode.io">
+            <div class="download-icon windows-icon" aria-hidden="true">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <div>
+              <span class="download-label" data-i18n="download.winLabel">Windows</span>
+              <span class="download-title" data-i18n="download.winTitle">Download for Windows</span>
+            </div>
+            <span class="download-cta" data-i18n="download.cta">Download</span>
+          </a>
+          <a class="download-card web" href="https://app.pushcode.io" target="_blank" rel="noopener noreferrer">
+            <div class="download-icon" aria-hidden="true">🌐</div>
+            <div>
+              <span class="download-label" data-i18n="download.webLabel">Web</span>
+              <span class="download-title" data-i18n="download.webTitle">Open in the browser</span>
+            </div>
+            <span class="download-cta" data-i18n="download.open">Open</span>
+          </a>
+        </div>
+      </section>
+
+      <section id="how" class="section how">
+        <div class="section-heading">
+          <h2 data-i18n="how.title">How it works (technical).</h2>
+          <p data-i18n="how.subtitle">
+            Sender authenticates, fetches the receiver public key, encrypts the file locally, and uploads the
+            encrypted container. The owner downloads and decrypts using their device key; the server never
+            sees plaintext.
+          </p>
+        </div>
+        <div class="step-grid">
+          <article class="step-card reveal">
+            <div class="step-icon" aria-hidden="true">🔐</div>
+            <span class="step-index">01</span>
+            <h3 data-i18n="how.step1Title">Create pushcode + key</h3>
+            <p data-i18n="how.step1Body">
+              The owner creates a pushcode bound to a device public key and short TTL.
+            </p>
+          </article>
+          <article class="step-card reveal">
+            <div class="step-icon" aria-hidden="true">📤</div>
+            <span class="step-index">02</span>
+            <h3 data-i18n="how.step2Title">Encrypt & upload</h3>
+            <p data-i18n="how.step2Body">
+              Sender authenticates, fetches the public key, encrypts the file locally, and uploads the
+              encrypted container.
+            </p>
+          </article>
+          <article class="step-card reveal">
+            <div class="step-icon" aria-hidden="true">✅</div>
+            <span class="step-index">03</span>
+            <h3 data-i18n="how.step3Title">Owner decrypts</h3>
+            <p data-i18n="how.step3Body">
+              Owner downloads the container and decrypts with their device key; transfer closes after
+              download or TTL.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="security" class="section security">
+        <div class="section-heading">
+          <h2 data-i18n="security.title">Built for trust.</h2>
+          <p data-i18n="security.subtitle">Plain‑English privacy that feels easy.</p>
+        </div>
+        <div class="security-grid">
+          <div class="security-card reveal">
+            <div class="security-icon" aria-hidden="true">🛡️</div>
+            <h3 data-i18n="security.card1Title">Private by default</h3>
+            <p data-i18n="security.card1Body">Your files are locked before they leave your device.</p>
+            <span class="tag" data-i18n="security.card1Tag">Private</span>
+          </div>
+          <div class="security-card reveal">
+            <div class="security-icon" aria-hidden="true">⏳</div>
+            <h3 data-i18n="security.card2Title">Short‑lived access</h3>
+            <p data-i18n="security.card2Body">Codes expire quickly, so old links don’t hang around.</p>
+            <span class="tag" data-i18n="security.card2Tag">Short‑lived</span>
+          </div>
+          <div class="security-card reveal">
+            <div class="security-icon" aria-hidden="true">🔑</div>
+            <h3 data-i18n="security.card3Title">Only the owner can open</h3>
+            <p data-i18n="security.card3Body">The file opens only on the device that made the code.</p>
+            <span class="tag" data-i18n="security.card3Tag">Owner‑only</span>
+          </div>
+          <div class="security-card reveal">
+            <div class="security-icon" aria-hidden="true">🧠</div>
+            <h3 data-i18n="security.card4Title">Protected from guessing</h3>
+            <p data-i18n="security.card4Body">We block repeated guessing attempts.</p>
+            <span class="tag" data-i18n="security.card4Tag">Protection</span>
+          </div>
+        </div>
+        <div class="security-note">
+          <p data-i18n="security.note">
+            In short: even if someone finds your code, they still can’t open the
+            file without your device. It’s designed to keep private stuff private.
+          </p>
+        </div>
+      </section>
+
+      <section id="platforms" class="section platforms">
+        <div class="section-heading">
+          <h2 data-i18n="platforms.title">Everywhere you work.</h2>
+          <p data-i18n="platforms.subtitle">Fast, simple apps built for each device.</p>
+        </div>
+        <div class="platform-grid">
+          <div class="platform-card reveal">
+            <h3 data-i18n="platforms.iosTitle">iOS & iPadOS</h3>
+            <p data-i18n="platforms.iosBody">Quick sharing with a clean, mobile‑first design.</p>
+          </div>
+          <div class="platform-card reveal">
+            <h3 data-i18n="platforms.macTitle">macOS</h3>
+            <p data-i18n="platforms.macBody">A lightweight menu‑bar app for instant access.</p>
+          </div>
+          <div class="platform-card reveal">
+            <h3 data-i18n="platforms.winTitle">Windows</h3>
+            <p data-i18n="platforms.winBody">Tray‑friendly, fast, and ready for daily work.</p>
+          </div>
+          <div class="platform-card reveal">
+            <h3 data-i18n="platforms.webTitle">Web</h3>
+            <p data-i18n="platforms.webBody">Use it anywhere without installing anything.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="api" class="section api">
+        <div class="section-heading">
+          <h2 data-i18n="api.title">How it works (technical).</h2>
+          <p data-i18n="api.subtitle">
+            Files are encrypted on the sender’s device, uploaded as encrypted
+            containers, and can only be opened by the owner’s device key.
+          </p>
+        </div>
+        <div class="api-panel reveal">
+          <div class="api-copy">
+            <h3 data-i18n="api.cardTitle">Reliable, predictable transfers</h3>
+            <ul>
+              <li data-i18n="api.point1">Short codes keep sharing effortless.</li>
+              <li data-i18n="api.point2">Sender sign‑in for accountability.</li>
+              <li data-i18n="api.point3">Owner‑only access to downloads.</li>
+              <li data-i18n="api.point4">Works across desktop and mobile.</li>
+            </ul>
+            <a class="cta primary" href="https://pushcode.io" data-i18n="api.cta">Read the docs</a>
+          </div>
+          <div class="api-code">
+            <p class="tile-note" data-i18n="api.noteLabel">Working description (for technical readers)</p>
+            <p data-i18n="api.noteBody">
+              Pushcode is an end‑to‑end encrypted file handoff system with
+              short‑lived codes, sender authentication, and owner‑only downloads.
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="section cta-section">
+        <div class="cta-card">
+          <h2 data-i18n="cta.title">Ready to share with confidence?</h2>
+          <p data-i18n="cta.subtitle">Join the private beta and start sending across all platforms.</p>
+          <div class="cta-row">
+            <a class="cta primary" href="https://app.pushcode.io" data-i18n="cta.primary">Request access</a>
+            <a class="cta ghost" href="https://pushcode.io" data-i18n="cta.secondary">Talk to us</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <a class="brand" href="https://pushcode.io">
+          <img class="brand-logo" src="img/pc_logo_trans_light.svg" alt="Pushcode logo" />
+          <span class="brand-name">pushcode.io</span>
+        </a>
+        <p data-i18n="footer.tagline">Secure file sharing for modern teams.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#download" data-i18n="nav.download">Download</a>
+        <a href="#security" data-i18n="nav.security">Security</a>
+        <a href="#platforms" data-i18n="nav.platforms">Platforms</a>
+        <a href="#how" data-i18n="nav.how">How it works</a>
+      </div>
+      <div class="footer-meta">
+        <span data-i18n="footer.copyright">© 2026 Pushcode</span>
+        <span data-i18n="footer.availability">Available on iOS, iPadOS, macOS, Windows, and web.</span>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
