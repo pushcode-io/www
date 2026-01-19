@@ -560,6 +560,21 @@ main {
   color: #0b1220;
 }
 
+.download-subtitle {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.warn-icon {
+  width: 18px;
+  height: 18px;
+  margin-left: 8px;
+  fill: #b0441f;
+  vertical-align: -3px;
+}
+
 .download-cta {
   display: inline-flex;
   align-items: center;
@@ -650,15 +665,23 @@ main {
   .site-header {
     flex-direction: column;
     gap: 16px;
+    align-items: stretch;
   }
 
   .nav {
     flex-wrap: wrap;
     justify-content: center;
+    gap: 14px;
   }
 
   .header-actions {
     flex-direction: column;
+    align-items: center;
+  }
+
+  .lang-select {
+    width: 100%;
+    max-width: 220px;
   }
 
   .hero-actions,
@@ -677,6 +700,37 @@ main {
   .site-footer,
   .download-grid {
     grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 56px 6vw 40px;
+  }
+
+  .section {
+    padding: 70px 6vw;
+  }
+
+  .download {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .download-card {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+
+  .download-cta {
+    justify-self: start;
+  }
+
+  .api-panel {
+    gap: 20px;
+    padding: 22px;
+  }
+
+  .site-footer {
+    text-align: left;
   }
 }
 

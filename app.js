@@ -45,14 +45,17 @@ const translations = {
     "download.subtitle": "Download the apps so you are ready the moment a file arrives.",
     "download.iosLabel": "iOS & iPadOS",
     "download.iosTitle": "Download on the App Store",
+    "download.iosNote": "Requires iOS 16.6 / iPadOS 16.6+",
     "download.macLabel": "macOS",
     "download.macTitle": "Download for Mac",
+    "download.macNote": "Requires macOS 13.5 Ventura+",
     "download.winLabel": "Windows",
     "download.winTitle": "Download for Windows",
     "download.cta": "Download",
     "download.webLabel": "Web",
     "download.webTitle": "Open in the browser",
     "download.open": "Open",
+    "download.webNote": "Receive only (no sending)",
     "how.title": "How it works (technical).",
     "how.subtitle":
       "Sender authenticates, fetches the receiver public key, encrypts the file locally, and uploads the encrypted container. The owner downloads and decrypts using their device key; the server never sees plaintext.",
@@ -140,14 +143,17 @@ const translations = {
     "download.subtitle": "Lade die Apps, damit du bereit bist, sobald eine Datei ankommt.",
     "download.iosLabel": "iOS & iPadOS",
     "download.iosTitle": "Im App Store laden",
+    "download.iosNote": "Erfordert iOS 16.6 / iPadOS 16.6+",
     "download.macLabel": "macOS",
     "download.macTitle": "Für Mac laden",
+    "download.macNote": "Erfordert macOS 13.5 Ventura+",
     "download.winLabel": "Windows",
     "download.winTitle": "Für Windows laden",
     "download.cta": "Laden",
     "download.webLabel": "Web",
     "download.webTitle": "Im Browser öffnen",
     "download.open": "Öffnen",
+    "download.webNote": "Nur Empfang (kein Versand)",
     "how.title": "So funktioniert es (technisch).",
     "how.subtitle":
       "Absender authentifiziert sich, holt den öffentlichen Schlüssel des Empfängers, verschlüsselt lokal und lädt den verschlüsselten Container hoch. Der Besitzer lädt herunter und entschlüsselt mit dem Geräteschlüssel; der Server sieht keinen Klartext.",
@@ -235,14 +241,17 @@ const translations = {
     "download.subtitle": "Téléchargez les apps pour être prêt dès qu’un fichier arrive.",
     "download.iosLabel": "iOS & iPadOS",
     "download.iosTitle": "Télécharger sur l’App Store",
+    "download.iosNote": "Requiert iOS 16.6 / iPadOS 16.6+",
     "download.macLabel": "macOS",
     "download.macTitle": "Télécharger pour Mac",
+    "download.macNote": "Requiert macOS 13.5 Ventura+",
     "download.winLabel": "Windows",
     "download.winTitle": "Télécharger pour Windows",
     "download.cta": "Télécharger",
     "download.webLabel": "Web",
     "download.webTitle": "Ouvrir dans le navigateur",
     "download.open": "Ouvrir",
+    "download.webNote": "Réception uniquement (pas d’envoi)",
     "how.title": "Fonctionnement (technique).",
     "how.subtitle":
       "L’expéditeur s’authentifie, récupère la clé publique du destinataire, chiffre localement puis envoie le conteneur chiffré. Le propriétaire télécharge et déchiffre avec sa clé d’appareil ; le serveur ne voit jamais le clair.",
@@ -303,6 +312,7 @@ const translations = {
 };
 
 const i18nElements = document.querySelectorAll("[data-i18n]");
+const i18nTitleElements = document.querySelectorAll("[data-i18n-title]");
 const languageSelect = document.querySelector("#lang-select");
 
 const setLanguage = (lang) => {
@@ -311,6 +321,13 @@ const setLanguage = (lang) => {
     const key = el.getAttribute("data-i18n");
     if (pack[key]) {
       el.textContent = pack[key];
+    }
+  });
+  i18nTitleElements.forEach((el) => {
+    const key = el.getAttribute("data-i18n-title");
+    if (pack[key]) {
+      el.setAttribute("title", pack[key]);
+      el.setAttribute("aria-label", pack[key]);
     }
   });
   document.documentElement.lang = lang;
