@@ -129,8 +129,10 @@ const translations = {
     "cta.subtitle": "Join the private beta and start sending across all platforms.",
     "cta.primary": "Request access",
     "cta.secondary": "Talk to us",
-    "footer.tagline": "Secure file sharing for modern teams.",
-    "footer.copyright": "© 2026 Pushcode",
+    "footer.tagline": "Secure file sharing for individuals.",
+    "footer.brandPrefix": "pushcode.io is a product of",
+    "footer.brandLink": "dolani GmbH",
+    "footer.copyright": "© 2025 dolani GmbH - from Tsüri🇨🇭 with ❤️",
     "footer.availability": "Available on iOS, iPadOS, macOS, Windows, Linux CLI, and web."
   },
   de: {
@@ -247,8 +249,10 @@ const translations = {
     "cta.subtitle": "Tritt der privaten Beta bei und sende auf allen Plattformen.",
     "cta.primary": "Zugang anfordern",
     "cta.secondary": "Kontakt aufnehmen",
-    "footer.tagline": "Sicheres Teilen von Dateien für moderne Teams.",
-    "footer.copyright": "© 2026 Pushcode",
+    "footer.tagline": "Sicheres Teilen von Dateien für Einzelpersonen.",
+    "footer.brandPrefix": "pushcode.io ist ein Produkt der",
+    "footer.brandLink": "dolani GmbH",
+    "footer.copyright": "© 2025 dolani GmbH - from Tsüri🇨🇭 with ❤️",
     "footer.availability": "Verfügbar für iOS, iPadOS, macOS, Windows, Linux-CLI und Web."
   },
   fr: {
@@ -365,8 +369,10 @@ const translations = {
     "cta.subtitle": "Rejoignez la bêta privée et commencez à envoyer partout.",
     "cta.primary": "Demander l’accès",
     "cta.secondary": "Nous contacter",
-    "footer.tagline": "Partage de fichiers sécurisé pour les équipes modernes.",
-    "footer.copyright": "© 2026 Pushcode",
+    "footer.tagline": "Partage de fichiers sécurisé pour les particuliers.",
+    "footer.brandPrefix": "pushcode.io est un produit de",
+    "footer.brandLink": "dolani GmbH",
+    "footer.copyright": "© 2025 dolani GmbH - from Tsüri🇨🇭 with ❤️",
     "footer.availability": "Disponible sur iOS, iPadOS, macOS, Windows, Linux CLI et web."
   }
 };

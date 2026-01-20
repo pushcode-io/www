@@ -730,6 +730,8 @@ main {
   padding: 40px 8vw 60px;
   border-top: 1px solid var(--stroke);
   background: rgba(255, 255, 255, 0.8);
+  position: relative;
+  z-index: 2;
 }
 
 .footer-links,
@@ -738,6 +740,11 @@ main {
   gap: 10px;
   color: var(--muted);
   font-size: 0.9rem;
+}
+
+.footer-meta a {
+  color: var(--accent-2);
+  text-decoration: underline;
 }
 
 @media (max-width: 1100px) {
