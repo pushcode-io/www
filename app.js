@@ -32,7 +32,7 @@ const translations = {
     "hero.meta2Label": "Easy to share",
     "hero.meta2Value": "Six characters",
     "hero.meta3Label": "Works everywhere",
-    "hero.meta3Value": "iOS · iPadOS · macOS · Windows · Web",
+    "hero.meta3Value": "iOS · iPadOS · macOS · Windows · Linux CLI · Web",
     "hero.status1Title": "Waiting for the file",
     "hero.status1Body": "The sender signs in and uploads using your code.",
     "hero.status2Title": "Locked before it leaves",
@@ -51,11 +51,29 @@ const translations = {
     "download.macNote": "Requires macOS 13.5 Ventura+",
     "download.winLabel": "Windows",
     "download.winTitle": "Download for Windows",
+    "download.winNote": "Requires Windows 10+",
     "download.cta": "Download",
+    "download.linuxLabel": "Linux CLI",
+    "download.linuxTitle": "Install the CLI",
+    "download.linuxNote": "x86_32 · amd64 · arm64",
     "download.webLabel": "Web",
     "download.webTitle": "Open in the browser",
     "download.open": "Open",
     "download.webNote": "Receive only (no sending)",
+    "download.androidLabel": "Android",
+    "download.androidTitle": "Coming soon",
+    "download.androidNote": "Join the waitlist for early access",
+    "download.select": "Select",
+    "download.macSelect": "Mac download options",
+    "download.macIntel": "Intel",
+    "download.macApple": "Apple Silicon",
+    "download.winSelect": "Windows download options",
+    "download.win32": "32-bit",
+    "download.win64": "64-bit",
+    "download.linuxSelect": "Linux CLI download options",
+    "download.linuxX86": "x86_32",
+    "download.linuxAmd64": "amd64",
+    "download.linuxArm64": "arm64",
     "how.title": "How it works (technical).",
     "how.subtitle":
       "Sender authenticates, fetches the receiver public key, encrypts the file locally, and uploads the encrypted container. The owner downloads and decrypts using their device key; the server never sees plaintext.",
@@ -91,6 +109,8 @@ const translations = {
     "platforms.macBody": "A lightweight menu-bar app for instant access.",
     "platforms.winTitle": "Windows",
     "platforms.winBody": "Tray-friendly, fast, and ready for daily work.",
+    "platforms.linuxTitle": "Linux CLI",
+    "platforms.linuxBody": "Scriptable transfers for terminals and CI.",
     "platforms.webTitle": "Web",
     "platforms.webBody": "Use it anywhere without installing anything.",
     "api.title": "How it works (technical).",
@@ -111,7 +131,7 @@ const translations = {
     "cta.secondary": "Talk to us",
     "footer.tagline": "Secure file sharing for modern teams.",
     "footer.copyright": "© 2026 Pushcode",
-    "footer.availability": "Available on iOS, iPadOS, macOS, Windows, and web."
+    "footer.availability": "Available on iOS, iPadOS, macOS, Windows, Linux CLI, and web."
   },
   de: {
     "nav.download": "Download",
@@ -130,7 +150,7 @@ const translations = {
     "hero.meta2Label": "Leicht zu teilen",
     "hero.meta2Value": "Sechs Zeichen",
     "hero.meta3Label": "Überall nutzbar",
-    "hero.meta3Value": "iOS · iPadOS · macOS · Windows · Web",
+    "hero.meta3Value": "iOS · iPadOS · macOS · Windows · Linux-CLI · Web",
     "hero.status1Title": "Warten auf die Datei",
     "hero.status1Body": "Der Absender meldet sich an und lädt mit deinem Code hoch.",
     "hero.status2Title": "Vor dem Senden gesperrt",
@@ -149,11 +169,29 @@ const translations = {
     "download.macNote": "Erfordert macOS 13.5 Ventura+",
     "download.winLabel": "Windows",
     "download.winTitle": "Für Windows laden",
+    "download.winNote": "Erfordert Windows 10+",
     "download.cta": "Laden",
+    "download.linuxLabel": "Linux-CLI",
+    "download.linuxTitle": "CLI installieren",
+    "download.linuxNote": "x86_32 · amd64 · arm64",
     "download.webLabel": "Web",
     "download.webTitle": "Im Browser öffnen",
     "download.open": "Öffnen",
     "download.webNote": "Nur Empfang (kein Versand)",
+    "download.androidLabel": "Android",
+    "download.androidTitle": "Demnächst",
+    "download.androidNote": "Auf die Warteliste für Early Access",
+    "download.select": "Auswählen",
+    "download.macSelect": "Mac-Download-Optionen",
+    "download.macIntel": "Intel",
+    "download.macApple": "Apple Silicon",
+    "download.winSelect": "Windows-Download-Optionen",
+    "download.win32": "32-Bit",
+    "download.win64": "64-Bit",
+    "download.linuxSelect": "Linux-CLI-Optionen",
+    "download.linuxX86": "x86_32",
+    "download.linuxAmd64": "amd64",
+    "download.linuxArm64": "arm64",
     "how.title": "So funktioniert es (technisch).",
     "how.subtitle":
       "Absender authentifiziert sich, holt den öffentlichen Schlüssel des Empfängers, verschlüsselt lokal und lädt den verschlüsselten Container hoch. Der Besitzer lädt herunter und entschlüsselt mit dem Geräteschlüssel; der Server sieht keinen Klartext.",
@@ -189,6 +227,8 @@ const translations = {
     "platforms.macBody": "Leichte Menüleisten-App für sofortigen Zugriff.",
     "platforms.winTitle": "Windows",
     "platforms.winBody": "Schnell, zuverlässig, ideal für den Alltag.",
+    "platforms.linuxTitle": "Linux-CLI",
+    "platforms.linuxBody": "Skriptfähig für Terminal und CI.",
     "platforms.webTitle": "Web",
     "platforms.webBody": "Überall nutzbar, ohne Installation.",
     "api.title": "So funktioniert es (technisch).",
@@ -209,7 +249,7 @@ const translations = {
     "cta.secondary": "Kontakt aufnehmen",
     "footer.tagline": "Sicheres Teilen von Dateien für moderne Teams.",
     "footer.copyright": "© 2026 Pushcode",
-    "footer.availability": "Verfügbar für iOS, iPadOS, macOS, Windows und Web."
+    "footer.availability": "Verfügbar für iOS, iPadOS, macOS, Windows, Linux-CLI und Web."
   },
   fr: {
     "nav.download": "Télécharger",
@@ -228,7 +268,7 @@ const translations = {
     "hero.meta2Label": "Facile à partager",
     "hero.meta2Value": "Six caractères",
     "hero.meta3Label": "Partout",
-    "hero.meta3Value": "iOS · iPadOS · macOS · Windows · Web",
+    "hero.meta3Value": "iOS · iPadOS · macOS · Windows · Linux CLI · Web",
     "hero.status1Title": "En attente du fichier",
     "hero.status1Body": "L’expéditeur se connecte et envoie avec votre code.",
     "hero.status2Title": "Verrouillé avant l’envoi",
@@ -247,11 +287,29 @@ const translations = {
     "download.macNote": "Requiert macOS 13.5 Ventura+",
     "download.winLabel": "Windows",
     "download.winTitle": "Télécharger pour Windows",
+    "download.winNote": "Requiert Windows 10+",
     "download.cta": "Télécharger",
+    "download.linuxLabel": "Linux CLI",
+    "download.linuxTitle": "Installer la CLI",
+    "download.linuxNote": "x86_32 · amd64 · arm64",
     "download.webLabel": "Web",
     "download.webTitle": "Ouvrir dans le navigateur",
     "download.open": "Ouvrir",
     "download.webNote": "Réception uniquement (pas d’envoi)",
+    "download.androidLabel": "Android",
+    "download.androidTitle": "Bientôt disponible",
+    "download.androidNote": "Inscrivez-vous pour un accès anticipé",
+    "download.select": "Sélectionner",
+    "download.macSelect": "Options Mac",
+    "download.macIntel": "Intel",
+    "download.macApple": "Apple Silicon",
+    "download.winSelect": "Options Windows",
+    "download.win32": "32 bits",
+    "download.win64": "64 bits",
+    "download.linuxSelect": "Options Linux CLI",
+    "download.linuxX86": "x86_32",
+    "download.linuxAmd64": "amd64",
+    "download.linuxArm64": "arm64",
     "how.title": "Fonctionnement (technique).",
     "how.subtitle":
       "L’expéditeur s’authentifie, récupère la clé publique du destinataire, chiffre localement puis envoie le conteneur chiffré. Le propriétaire télécharge et déchiffre avec sa clé d’appareil ; le serveur ne voit jamais le clair.",
@@ -287,6 +345,8 @@ const translations = {
     "platforms.macBody": "App discrète dans la barre de menus pour un accès instantané.",
     "platforms.winTitle": "Windows",
     "platforms.winBody": "Rapide, fiable, prêt pour le quotidien.",
+    "platforms.linuxTitle": "Linux CLI",
+    "platforms.linuxBody": "Transferts scriptables pour terminal et CI.",
     "platforms.webTitle": "Web",
     "platforms.webBody": "Utilisable partout, sans installation.",
     "api.title": "Fonctionnement (technique).",
@@ -307,12 +367,13 @@ const translations = {
     "cta.secondary": "Nous contacter",
     "footer.tagline": "Partage de fichiers sécurisé pour les équipes modernes.",
     "footer.copyright": "© 2026 Pushcode",
-    "footer.availability": "Disponible sur iOS, iPadOS, macOS, Windows et web."
+    "footer.availability": "Disponible sur iOS, iPadOS, macOS, Windows, Linux CLI et web."
   }
 };
 
 const i18nElements = document.querySelectorAll("[data-i18n]");
 const i18nTitleElements = document.querySelectorAll("[data-i18n-title]");
+const i18nAriaElements = document.querySelectorAll("[data-i18n-aria]");
 const languageSelect = document.querySelector("#lang-select");
 
 const setLanguage = (lang) => {
@@ -327,6 +388,12 @@ const setLanguage = (lang) => {
     const key = el.getAttribute("data-i18n-title");
     if (pack[key]) {
       el.setAttribute("title", pack[key]);
+      el.setAttribute("aria-label", pack[key]);
+    }
+  });
+  i18nAriaElements.forEach((el) => {
+    const key = el.getAttribute("data-i18n-aria");
+    if (pack[key]) {
       el.setAttribute("aria-label", pack[key]);
     }
   });
@@ -347,3 +414,50 @@ if (languageSelect) {
     setLanguage(event.target.value);
   });
 }
+
+const dropdowns = document.querySelectorAll("[data-dropdown]");
+
+const closeAllDropdowns = () => {
+  dropdowns.forEach((dropdown) => {
+    dropdown.classList.remove("open");
+    const toggle = dropdown.querySelector(".dropdown-toggle");
+    if (toggle) toggle.setAttribute("aria-expanded", "false");
+  });
+};
+
+dropdowns.forEach((dropdown) => {
+  const toggle = dropdown.querySelector(".dropdown-toggle");
+  const items = dropdown.querySelectorAll(".dropdown-item");
+
+  if (toggle) {
+    toggle.addEventListener("click", (event) => {
+      event.stopPropagation();
+      const isOpen = dropdown.classList.contains("open");
+      closeAllDropdowns();
+      if (!isOpen) {
+        dropdown.classList.add("open");
+        toggle.setAttribute("aria-expanded", "true");
+      }
+    });
+  }
+
+  items.forEach((item) => {
+    item.addEventListener("click", () => {
+      closeAllDropdowns();
+    });
+  });
+});
+
+document.addEventListener("click", closeAllDropdowns);
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    closeAllDropdowns();
+  }
+});
+
+const downloadSelects = document.querySelectorAll(".download-select");
+downloadSelects.forEach((select) => {
+  select.addEventListener("change", (event) => {
+    event.target.selectedIndex = 0;
+  });
+});

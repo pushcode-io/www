@@ -468,7 +468,7 @@ main {
 .download-grid {
   margin-top: 36px;
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 20px;
 }
 
@@ -486,38 +486,54 @@ main {
   padding-bottom: 110px;
 }
 
-.download-card {
+.download-tile {
   background: linear-gradient(150deg, #ffffff 0%, #eef3ff 100%);
-  border: 1px solid rgba(0, 122, 255, 0.2);
-  border-radius: 26px;
-  padding: 30px;
-  display: grid;
-  grid-template-columns: auto 1fr auto;
+  border: 1px solid rgba(0, 122, 255, 0.18);
+  border-radius: 24px;
+  padding: 22px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  box-shadow: 0 14px 28px rgba(0, 40, 120, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.download-tile:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 34px rgba(0, 40, 120, 0.12);
+  border-color: rgba(0, 122, 255, 0.28);
+}
+
+.download-left {
+  display: flex;
   align-items: center;
   gap: 16px;
-  box-shadow: var(--shadow);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.download-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 20px 36px rgba(0, 40, 120, 0.18);
-}
-
-.download-card.appstore {
+.download-tile.appstore {
   background: linear-gradient(150deg, #ffffff 0%, #e7f0ff 100%);
 }
 
-.download-card.mac {
+.download-tile.mac {
   background: linear-gradient(150deg, #ffffff 0%, #edf6ff 100%);
 }
 
-.download-card.windows {
+.download-tile.windows {
   background: linear-gradient(150deg, #ffffff 0%, #eef0ff 100%);
 }
 
-.download-card.web {
+.download-tile.linux {
+  background: linear-gradient(150deg, #ffffff 0%, #f3f0ff 100%);
+}
+
+.download-tile.web {
   background: linear-gradient(150deg, #ffffff 0%, #eff7ff 100%);
+}
+
+.download-tile.teaser {
+  border-style: dashed;
+  background: linear-gradient(150deg, #ffffff 0%, #f7f9ff 100%);
 }
 
 .download-icon {
@@ -579,13 +595,91 @@ main {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: fit-content;
-  padding: 10px 18px;
+  width: 145px;
+  height: 44px;
+  padding: 0 18px;
   border-radius: 14px;
   background: linear-gradient(135deg, var(--accent), var(--accent-2));
   color: #ffffff;
   font-weight: 600;
   font-size: 0.9rem;
+  box-shadow: none;
+}
+
+.download-cta.ghost {
+  background: transparent;
+  color: #0b1220;
+  border: 1px solid rgba(3, 111, 226, 0.35);
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  border: none;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  padding: 0 40px 0 16px;
+  border-radius: 14px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ffffff;
+  cursor: pointer;
+  height: 44px;
+  width: 145px;
+  position: relative;
+}
+
+.dropdown-toggle::after {
+  content: "";
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  transform: translateY(-55%) rotate(45deg);
+}
+
+.dropdown-toggle:focus {
+  outline: 2px solid rgba(0, 122, 255, 0.35);
+  outline-offset: 2px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 10px);
+  min-width: 180px;
+  background: #ffffff;
+  border: 1px solid rgba(11, 18, 32, 0.12);
+  border-radius: 14px;
+  box-shadow: 0 16px 30px rgba(0, 40, 120, 0.12);
+  padding: 8px;
+  display: none;
+  z-index: 5;
+}
+
+.dropdown.open .dropdown-menu {
+  display: grid;
+  gap: 6px;
+}
+
+.dropdown-item {
+  background: transparent;
+  border: none;
+  text-align: left;
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  color: #0b1220;
+  cursor: pointer;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background: rgba(0, 122, 255, 0.12);
 }
 
 .sr-only {
@@ -715,13 +809,9 @@ main {
     padding-bottom: 80px;
   }
 
-  .download-card {
-    grid-template-columns: 1fr;
-    text-align: left;
-  }
-
-  .download-cta {
-    justify-self: start;
+  .download-tile {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .api-panel {

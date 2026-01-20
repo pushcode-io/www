@@ -67,7 +67,7 @@
             </div>
             <div>
               <span class="meta-label" data-i18n="hero.meta3Label">Works everywhere</span>
-              <span class="meta-value" data-i18n="hero.meta3Value">iOS · iPadOS · macOS · Windows · Web</span>
+              <span class="meta-value" data-i18n="hero.meta3Value">iOS · iPadOS · macOS · Windows · Linux CLI · Web</span>
             </div>
           </div>
         </div>
@@ -109,47 +109,108 @@
           <p data-i18n="download.subtitle">Download the apps so you’re ready the moment a file arrives.</p>
         </div>
         <div class="download-grid">
-          <a class="download-card appstore" href="https://app.pushcode.io">
-            <div class="download-icon" aria-hidden="true"></div>
-            <div>
-              <span class="download-label" data-i18n="download.iosLabel">iOS & iPadOS</span>
-              <span class="download-title" data-i18n="download.iosTitle">Download on the App Store</span>
-              <span class="download-subtitle" data-i18n="download.iosNote">Requires iOS 16.6 / iPadOS 16.6+</span>
+          <div class="download-tile appstore">
+            <div class="download-left">
+              <div class="download-icon" aria-hidden="true"></div>
+              <div>
+                <span class="download-label" data-i18n="download.iosLabel">iOS & iPadOS</span>
+                <span class="download-title" data-i18n="download.iosTitle">Download on the App Store</span>
+                <span class="download-subtitle" data-i18n="download.iosNote">Requires iOS 16.6 / iPadOS 16.6+</span>
+              </div>
             </div>
             <span class="download-cta" data-i18n="download.cta">Download</span>
-          </a>
-          <a class="download-card mac" href="https://app.pushcode.io">
-            <div class="download-icon" aria-hidden="true">⌘</div>
-            <div>
-              <span class="download-label" data-i18n="download.macLabel">macOS</span>
-              <span class="download-title" data-i18n="download.macTitle">Download for Mac</span>
-              <span class="download-subtitle" data-i18n="download.macNote">Requires macOS 13.5 Ventura+</span>
+          </div>
+
+          <div class="download-tile mac">
+            <div class="download-left">
+              <div class="download-icon" aria-hidden="true">⌘</div>
+              <div>
+                <span class="download-label" data-i18n="download.macLabel">macOS</span>
+                <span class="download-title" data-i18n="download.macTitle">Download for Mac</span>
+                <span class="download-subtitle" data-i18n="download.macNote">Requires macOS 13.5 Ventura+</span>
+              </div>
             </div>
-            <span class="download-cta" data-i18n="download.cta">Download</span>
-          </a>
-          <a class="download-card windows" href="https://app.pushcode.io">
-            <div class="download-icon windows-icon" aria-hidden="true">
-              <span></span><span></span><span></span><span></span>
+            <div class="dropdown" data-dropdown>
+              <button class="dropdown-toggle" type="button" aria-expanded="false" data-i18n="download.select">
+                Select
+              </button>
+              <div class="dropdown-menu" role="menu">
+                <button class="dropdown-item" type="button" data-value="mac-intel" data-i18n="download.macIntel">Intel</button>
+                <button class="dropdown-item" type="button" data-value="mac-apple" data-i18n="download.macApple">Apple Silicon</button>
+              </div>
             </div>
-            <div>
-              <span class="download-label" data-i18n="download.winLabel">Windows</span>
-              <span class="download-title" data-i18n="download.winTitle">Download for Windows</span>
+          </div>
+
+          <div class="download-tile windows">
+            <div class="download-left">
+              <div class="download-icon windows-icon" aria-hidden="true">
+                <span></span><span></span><span></span><span></span>
+              </div>
+              <div>
+                <span class="download-label" data-i18n="download.winLabel">Windows</span>
+                <span class="download-title" data-i18n="download.winTitle">Download for Windows</span>
+                <span class="download-subtitle" data-i18n="download.winNote">Requires Windows 10+</span>
+              </div>
             </div>
-            <span class="download-cta" data-i18n="download.cta">Download</span>
-          </a>
-          <a class="download-card web" href="https://app.pushcode.io" target="_blank" rel="noopener noreferrer" data-i18n-title="download.webNote">
-            <div class="download-icon" aria-hidden="true">🌐</div>
-            <div>
-              <span class="download-label" data-i18n="download.webLabel">Web</span>
-              <span class="download-title" data-i18n="download.webTitle">
-                Open in the browser
-                <svg class="warn-icon" viewBox="0 0 24 24" role="img" tabindex="0" data-i18n-title="download.webNote" title="Receive only (no sending)" aria-label="Receive only (no sending)">
-                  <path d="M12 3.5 2.6 20.5a1.1 1.1 0 0 0 .95 1.65h17a1.1 1.1 0 0 0 .95-1.65L12 3.5zm0 5.1c.6 0 1 .4 1 1v5.6a1 1 0 1 1-2 0V9.6c0-.6.4-1 1-1zm0 10.1a1.4 1.4 0 1 1 0-2.8 1.4 1.4 0 0 1 0 2.8z"/>
-                </svg>
-              </span>
+            <div class="dropdown" data-dropdown>
+              <button class="dropdown-toggle" type="button" aria-expanded="false" data-i18n="download.select">
+                Select
+              </button>
+              <div class="dropdown-menu" role="menu">
+                <button class="dropdown-item" type="button" data-value="win-32" data-i18n="download.win32">32-bit</button>
+                <button class="dropdown-item" type="button" data-value="win-64" data-i18n="download.win64">64-bit</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="download-tile linux">
+            <div class="download-left">
+              <div class="download-icon" aria-hidden="true">🐧</div>
+              <div>
+                <span class="download-label" data-i18n="download.linuxLabel">Linux CLI</span>
+                <span class="download-title" data-i18n="download.linuxTitle">Install the CLI</span>
+                <span class="download-subtitle" data-i18n="download.linuxNote">x86_32 · amd64 · arm64</span>
+              </div>
+            </div>
+            <div class="dropdown" data-dropdown>
+              <button class="dropdown-toggle" type="button" aria-expanded="false" data-i18n="download.select">
+                Select
+              </button>
+              <div class="dropdown-menu" role="menu">
+                <button class="dropdown-item" type="button" data-value="linux-x86" data-i18n="download.linuxX86">x86_32</button>
+                <button class="dropdown-item" type="button" data-value="linux-amd64" data-i18n="download.linuxAmd64">amd64</button>
+                <button class="dropdown-item" type="button" data-value="linux-arm64" data-i18n="download.linuxArm64">arm64</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="download-tile teaser">
+            <div class="download-left">
+              <div class="download-icon" aria-hidden="true">🤖</div>
+              <div>
+                <span class="download-label" data-i18n="download.androidLabel">Android</span>
+                <span class="download-title" data-i18n="download.androidTitle">Coming soon</span>
+                <span class="download-subtitle" data-i18n="download.androidNote">Join the waitlist for early access</span>
+              </div>
+            </div>
+          </div>
+
+          <a class="download-tile web" href="https://app.pushcode.io" target="_blank" rel="noopener noreferrer" data-i18n-title="download.webNote" data-app-link="https://app.pushcode.io">
+            <div class="download-left">
+              <div class="download-icon" aria-hidden="true">🌐</div>
+              <div>
+                <span class="download-label" data-i18n="download.webLabel">Web</span>
+                <span class="download-title" data-i18n="download.webTitle">
+                  Open in the browser
+                  <svg class="warn-icon" viewBox="0 0 24 24" role="img" tabindex="0" data-i18n-title="download.webNote" title="Receive only (no sending)" aria-label="Receive only (no sending)">
+                    <path d="M12 3.5 2.6 20.5a1.1 1.1 0 0 0 .95 1.65h17a1.1 1.1 0 0 0 .95-1.65L12 3.5zm0 5.1c.6 0 1 .4 1 1v5.6a1 1 0 1 1-2 0V9.6c0-.6.4-1 1-1zm0 10.1a1.4 1.4 0 1 1 0-2.8 1.4 1.4 0 0 1 0 2.8z"/>
+                  </svg>
+                </span>
+              </div>
             </div>
             <span class="download-cta" data-i18n="download.open">Open</span>
           </a>
+
         </div>
       </section>
 
@@ -250,6 +311,10 @@
             <p data-i18n="platforms.winBody">Tray‑friendly, fast, and ready for daily work.</p>
           </div>
           <div class="platform-card reveal">
+            <h3 data-i18n="platforms.linuxTitle">Linux CLI</h3>
+            <p data-i18n="platforms.linuxBody">Scriptable transfers for terminals and CI.</p>
+          </div>
+          <div class="platform-card reveal">
             <h3 data-i18n="platforms.webTitle">Web</h3>
             <p data-i18n="platforms.webBody">Use it anywhere without installing anything.</p>
           </div>
@@ -314,7 +379,7 @@
       </div>
       <div class="footer-meta">
         <span data-i18n="footer.copyright">© 2026 Pushcode</span>
-        <span data-i18n="footer.availability">Available on iOS, iPadOS, macOS, Windows, and web.</span>
+        <span data-i18n="footer.availability">Available on iOS, iPadOS, macOS, Windows, Linux CLI, and web.</span>
       </div>
     </footer>
 
