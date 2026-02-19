@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pushcode — Terms of Service</title>
+    <meta
+      name="description"
+      content="Pushcode terms of service."
+    />
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="img/favicon.ico" sizes="any" />
+    <link rel="icon" href="img/favicon-32.png" type="image/png" sizes="32x32" />
+    <link rel="icon" href="img/favicon-16.png" type="image/png" sizes="16x16" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-orb orb-a" aria-hidden="true"></div>
+    <div class="bg-orb orb-b" aria-hidden="true"></div>
+    <div class="bg-grid" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="https://pushcode.io">
+        <img class="brand-logo" src="img/pc_logo_iso_trans.svg" alt="Pushcode logo" />
+        <span class="brand-name">pushcode.io</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html" data-i18n="terms.navHome">Home</a>
+        <a href="privacy.html" data-i18n="privacy.navPrivacy">Privacy</a>
+        <a href="terms.html" data-i18n="terms.navTerms">Terms</a>
+        <a href="fair-use.html" data-i18n="terms.navFairUse">Fair Use</a>
+      </nav>
+      <div class="header-actions">
+        <div class="lang-switch">
+          <label class="sr-only" for="lang-select" data-i18n="nav.langLabel">Language</label>
+          <select id="lang-select" class="lang-select" aria-label="Language">
+            <option value="en">EN</option>
+            <option value="de">DE</option>
+            <option value="fr">FR</option>
+          </select>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section privacy-hero">
+        <div class="section-heading">
+          <h1 data-i18n="terms.title">Terms of Service — Pushcode</h1>
+          <p class="privacy-date" data-i18n="terms.lastUpdated">Last updated: January 20, 2026</p>
+        </div>
+      </section>
+
+      <section class="section privacy">
+        <div class="privacy-card">
+          <h2 data-i18n="terms.section1Title">1. About these Terms</h2>
+          <p data-i18n="terms.section1Body">
+            These Terms of Service (“Terms”) govern your access to and use of the Pushcode
+            applications, APIs, and related services (the “Service”). By creating an account,
+            using the Service, or uploading/downloading an artifact, you agree to these Terms.
+          </p>
+        </div>
+
+        <div class="privacy-card">
+          <h2 data-i18n="terms.section2Title">2. Service description (high-level)</h2>
+          <p data-i18n="terms.section2Body">
+            Pushcode enables end‑to‑end encrypted file transfers using short‑lived “pushcodes.”
+            The sender encrypts a file locally and uploads a binary encrypted container (“artifact”)
+            to the Service. Only the intended recipient (“Owner”)—who holds the corresponding
+            private key on their device—can download and decrypt the artifact.
+          </p>
+        </div>
+
+        <div class="privacy-card">
+          <h2 data-i18n="terms.section3Title">3. Eligibility</h2>
+          <p data-i18n="terms.section3Body">
+            You must be at least 16 years old and capable of entering into a binding agreement.
+            If you use the Service on behalf of an organization, you represent that you have
+            authority to bind that organization.
+          </p>
+        </div>
+
+        <div class="privacy-card">
+          <h2 data-i18n="terms.section4Title">4. Accounts and authentication</h2>
+          <p data-i18n="terms.section4Body">
+            Owners use an email address and password to create an account. Passwords are stored
+            only as a secure hash. The Service uses access tokens and refresh tokens to maintain
+            sessions. You are responsible for maintaining account security and all activity under
+            your account and must notify us promptly of unauthorized access.
+          </p>
+        </div>
+
+        <div class="privacy-card">
+          <h2 data-i18n="terms.section5Title">5. Pushcodes, access model, and rate limits</h2>
+          <ul>
+            <li data-i18n="terms.section5A">Pushcodes are short‑lived (default TTL 1 hour; configurable) and coordinate a transfer.</li>
+            <li data-i18n="terms.section5B">Uploading an artifact does not require an account login; a valid pushcode acts as a bearer token.</li>
+            <li data-i18n="terms.section5C">Downloading an artifact requires the Owner to be authenticated; only the Owner may download/delete artifacts.</li>
+            <li data-i18n="terms.section5D">Rate limits (per IP and per user) apply to prevent brute‑force guessing and abuse.</li>
+          </ul>
+        </div>
+
+        <div class="privacy-card">
+          <h2 data-i18n="terms.section6Title">6. Your content, responsibilities, and acceptable use</h2>
+          <ul>
+            <li data-i18n="terms.section6A">You are responsible for the content you upload, share, or receive via the Service (“User Content”).</li>
+            <li data-i18n="terms.section6B">You may not use the Service to violate law, infringe rights, distribute malware/phishing/spam, guess pushcodes, bypass rate limits, or interfere with the Service.</li>
+            <li data-i18n="terms.section6C">Avoid uploading highly sensitive data unless you accept the risks of device compromise and operational exposure.</li>
+          </ul>
+        </div>
+
+        <div class="privacy-card">
+          <h2 data-i18n="terms.section7Title">7. Encryption, keys, and limitations of confidentiality</h2>
+          <ul>
+            <li data-i18n="terms.section7A">Artifacts are encrypted using AES‑256‑GCM; file keys are wrapped via X25519 + HKDF‑SHA256 + ChaCha20‑Poly1305.</li>
+            <li data-i18n="terms.section7B">Private keys remain on device. If you lose your private key, you may permanently lose access to encrypted artifacts.</li>
+            <li data-i18n="terms.section7C">We do not decrypt artifacts in normal operation. Confidentiality also depends on your device security and handling of pushcodes and decrypted files.</li>
+          </ul>
+        </div>
+
+        <div class="privacy-card">
+          <h2 data-i18n="terms.section8Title">8. Service limits and storage</h2>
+          <ul>
+            <li data-i18n="terms.section8A">Artifacts are subject to size limits (MVP: max 100MB per artifact) and may be rejected if too large.</li>
+            <li data-i18n="terms.section8B">Pushcodes and artifacts expire based on TTL and lifecycle state; expired data may be deleted automatically.</li>
+            <li data-i18n="terms.section8C">We may modify, suspend, or discontinue parts of the Service at any time and do not guarantee uninterrupted availability.</li>
+          </ul>
+        </div>
+
+        <div class="privacy-card">
+          <h2 data-i18n="terms.section9Title">9. Intellectual property</h2>
+          <p data-i18n="terms.section9Body">
+            We and our licensors own all rights in the Service, including software, trademarks,
+            and documentation. You receive a limited, non‑exclusive, non‑transferable right to
+            use the Service in accordance with these Terms.
+          </p>
+        </div>
+
+        <div class="privacy-card">
+          <h2 data-i18n="terms.section10Title">10. Termination</h2>
+          <p data-i18n="terms.section10Body">
+            You may stop using the Service at any time. We may suspend or terminate access if you
+            violate these Terms, if required by law, or to protect the Service and other users.
+          </p>
+        </div>
+
+        <div class="privacy-card">
+          <h2 data-i18n="terms.section11Title">11. Disclaimers</h2>
+          <p data-i18n="terms.section11Body">
+            The Service is provided “as is” and “as available.” To the maximum extent permitted
+            by law, we disclaim all warranties. We do not warrant uninterrupted service or that
+            artifacts will always be retrievable (e.g., after expiration, deletion, or key loss).
+          </p>
+        </div>
+
+        <div class="privacy-card">
+          <h2 data-i18n="terms.section12Title">12. Limitation of liability</h2>
+          <p data-i18n="terms.section12Body">
+            To the maximum extent permitted by law, dolani GmbH shall not be liable for indirect,
+            incidental, special, consequential, or punitive damages, or for loss of data, profits,
+            revenue, or business. Our total liability is limited to the amount you paid to use the
+            Service in the 12 months prior to the event giving rise to liability, or CHF 100,
+            whichever is greater, unless mandatory law requires otherwise.
+          </p>
+        </div>
+
+        <div class="privacy-card">
+          <h2 data-i18n="terms.section13Title">13. Indemnification</h2>
+          <p data-i18n="terms.section13Body">
+            If you use the Service on behalf of a business, you agree to indemnify and hold harmless
+            dolani GmbH from claims arising out of your User Content or your breach of these Terms.
+          </p>
+        </div>
+
+        <div class="privacy-card">
+          <h2 data-i18n="terms.section14Title">14. Governing law and venue</h2>
+          <p data-i18n="terms.section14Body">
+            These Terms are governed by the laws of Switzerland. Courts located in Zürich shall
+            have exclusive jurisdiction, unless mandatory consumer law provides otherwise.
+          </p>
+        </div>
+
+        <div class="privacy-card">
+          <h2 data-i18n="terms.section15Title">15. Changes to these Terms</h2>
+          <p data-i18n="terms.section15Body">
+            We may update these Terms from time to time. The “Last updated” date indicates the
+            latest version. Continued use after changes becomes effective constitutes acceptance.
+          </p>
+        </div>
+
+        <div class="privacy-card">
+          <h2 data-i18n="terms.section16Title">16. Contact</h2>
+          <p data-i18n="terms.section16Body">
+            dolani GmbH, Kolbenacker 14, 8052 Zürich, Switzerland. Email: compliance@dolani.ch
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <a class="brand" href="https://pushcode.io">
+          <img class="brand-logo" src="img/pc_logo_trans_light.svg" alt="Pushcode logo" />
+          <span class="brand-name">pushcode.io</span>
+        </a>
+        <p data-i18n="footer.tagline">Secure file sharing for individuals.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html" data-i18n="terms.navHome">Home</a>
+        <a href="privacy.html" data-i18n="privacy.navPrivacy">Privacy</a>
+        <a href="terms.html" data-i18n="terms.navTerms">Terms</a>
+        <a href="fair-use.html" data-i18n="terms.navFairUse">Fair Use</a>
+      </div>
+      <div class="footer-meta">
+        <span>
+          <span data-i18n="footer.brandPrefix">pushcode.io is a product of</span>
+          <a href="https://dolani.ch" target="_blank" rel="noopener noreferrer" data-i18n="footer.brandLink">dolani GmbH</a>.
+        </span>
+        <span data-i18n="footer.copyright">© 2025 dolani GmbH - from Tsüri🇨🇭🇨🇭 with ❤️</span>
+        <span data-i18n="footer.availability">Available on iOS, iPadOS, macOS, Windows, Linux CLI, and web.</span>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

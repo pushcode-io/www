@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pushcode — Privacy</title>
+    <meta
+      name="description"
+      content="Pushcode privacy information for the website and the apps."
+    />
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="img/favicon.ico" sizes="any" />
+    <link rel="icon" href="img/favicon-32.png" type="image/png" sizes="32x32" />
+    <link rel="icon" href="img/favicon-16.png" type="image/png" sizes="16x16" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-orb orb-a" aria-hidden="true"></div>
+    <div class="bg-orb orb-b" aria-hidden="true"></div>
+    <div class="bg-grid" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="https://pushcode.io">
+        <img class="brand-logo" src="img/pc_logo_iso_trans.svg" alt="Pushcode logo" />
+        <span class="brand-name">pushcode.io</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html" data-i18n="privacy.navHome">Home</a>
+        <a href="privacy.html" data-i18n="privacy.navPrivacy">Privacy</a>
+        <a href="terms.html" data-i18n="terms.navTerms">Terms</a>
+        <a href="fair-use.html" data-i18n="terms.navFairUse">Fair Use</a>
+      </nav>
+      <div class="header-actions">
+        <div class="lang-switch">
+          <label class="sr-only" for="lang-select" data-i18n="nav.langLabel">Language</label>
+          <select id="lang-select" class="lang-select" aria-label="Language">
+            <option value="en">EN</option>
+            <option value="de">DE</option>
+            <option value="fr">FR</option>
+          </select>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section privacy-hero">
+        <div class="section-heading">
+          <h1 data-i18n="privacy.title">Privacy Information</h1>
+          <p data-i18n="privacy.subtitle">Privacy Information for Pushcode</p>
+          <p class="privacy-date" data-i18n="privacy.lastUpdated">Last updated: January 20, 2026</p>
+        </div>
+      </section>
+
+      <section class="section privacy">
+        <div class="privacy-card">
+          <h2 data-i18n="privacy.section1Title">1. Controller</h2>
+          <p data-i18n="privacy.controllerBody">
+            The controller responsible for processing your personal data is:
+            dolani GmbH, Kolbenacker 14, 8052 Zürich, Switzerland. Email: compliance@dolani.ch
+          </p>
+          <p data-i18n="privacy.dpoBody">DPO contact: compliance@dolani.ch</p>
+        </div>
+
+        <div class="privacy-card">
+          <h2 data-i18n="privacy.section2Title">2. What Pushcode is and how it works (privacy perspective)</h2>
+          <p data-i18n="privacy.section2Body">
+            Pushcode enables end‑to‑end encrypted file transfers using short‑lived “pushcodes”.
+            The server stores only the encrypted file container (“artifact”) and limited metadata required
+            to operate the service. The service is designed to minimize metadata (e.g., no filename or MIME
+            type is included in the container header by default).
+          </p>
+        </div>
+
+        <div class="privacy-card">
+          <h2 data-i18n="privacy.section3Title">3. Categories of personal data we process</h2>
+          <h3 data-i18n="privacy.section3A">A. Account & authentication data (registered users / “owners”)</h3>
+          <ul>
+            <li data-i18n="privacy.section3A1">Email address</li>
+            <li data-i18n="privacy.section3A2">Password hash (we do not store plaintext passwords)</li>
+            <li data-i18n="privacy.section3A3">Session / token data (e.g., access and refresh tokens; device identifier if provided)</li>
+            <li data-i18n="privacy.section3A4">Email verification status and timestamps</li>
+          </ul>
+          <h3 data-i18n="privacy.section3B">B. Pushcode session & cryptographic metadata</h3>
+          <ul>
+            <li data-i18n="privacy.section3B1">Pushcode value (6 characters) and expiry time (TTL)</li>
+            <li data-i18n="privacy.section3B2">Recipient/owner reference (user ID)</li>
+            <li data-i18n="privacy.section3B3">Recipient public key (X25519 public key)</li>
+            <li data-i18n="privacy.section3B4">Status timestamps (created / expires / downloaded)</li>
+          </ul>
+          <h3 data-i18n="privacy.section3C">C. Encrypted content (“artifact”)</h3>
+          <ul>
+            <li data-i18n="privacy.section3C1">Encrypted file container (ciphertext) stored on our infrastructure until deleted or expired</li>
+            <li data-i18n="privacy.section3C2">Container header elements required for decryption by the recipient (e.g., ephemeral public key, wrapped key, nonces, file size, tag). These elements do not allow decryption without the recipient’s private key.</li>
+          </ul>
+          <h3 data-i18n="privacy.section3D">D. Technical and security data</h3>
+          <ul>
+            <li data-i18n="privacy.section3D1">IP address and request metadata for rate limiting, fraud prevention, and security logging</li>
+            <li data-i18n="privacy.section3D2">Request IDs / logs (where enabled)</li>
+          </ul>
+        </div>
+
+        <div class="privacy-card">
+          <h2 data-i18n="privacy.section4Title">4. Purposes and legal bases (GDPR, where applicable)</h2>
+          <ul>
+            <li data-i18n="privacy.section4A">Providing the service (account, pushcodes, artifact transfer) — Art. 6(1)(b) GDPR</li>
+            <li data-i18n="privacy.section4B">Security, abuse prevention, and service integrity — Art. 6(1)(f) GDPR and/or Art. 6(1)(c)</li>
+            <li data-i18n="privacy.section4C">Operational communications (e.g., verification emails, security notices) — Art. 6(1)(b) and/or Art. 6(1)(f)</li>
+            <li data-i18n="privacy.section4D">Compliance and defense of legal claims — Art. 6(1)(f) and/or Art. 6(1)(c)</li>
+          </ul>
+        </div>
+
+        <div class="privacy-card">
+          <h2 data-i18n="privacy.section5Title">5. Data retention</h2>
+          <ul>
+            <li data-i18n="privacy.section5A">Pushcodes and related metadata: stored until expiration (default TTL 1 hour; configurable 5 minutes to 24 hours) or deletion by the owner.</li>
+            <li data-i18n="privacy.section5B">Encrypted artifacts: stored until deleted by the owner, expired by TTL, or removed by cleanup processes after download/expiration.</li>
+            <li data-i18n="privacy.section5C">Account data: stored as long as your account is active and as needed for legal compliance.</li>
+            <li data-i18n="privacy.section5D">Security logs / rate limiting data: retained for as long as necessary to protect the service and investigate abuse (typically up to 30 days).</li>
+          </ul>
+        </div>
+
+        <div class="privacy-card">
+          <h2 data-i18n="privacy.section6Title">6. Recipients and sharing</h2>
+          <ul>
+            <li data-i18n="privacy.section6A">Hosting and infrastructure providers acting as processors on our instructions</li>
+            <li data-i18n="privacy.section6B">Email delivery providers (for verification / service emails), if used</li>
+            <li data-i18n="privacy.section6C">Authorities / advisors where legally required or necessary for legal defense</li>
+          </ul>
+          <p data-i18n="privacy.section6Note">
+            We do not share or sell the contents of your files. The server stores encrypted artifacts only and cannot decrypt them without the recipient’s private key.
+          </p>
+        </div>
+
+        <div class="privacy-card">
+          <h2 data-i18n="privacy.section7Title">7. International transfers</h2>
+          <p data-i18n="privacy.section7Body">
+            If data is transferred outside the EEA/UK/Switzerland, we rely on appropriate safeguards (e.g., Standard Contractual Clauses) where required. Details are available upon request.
+          </p>
+        </div>
+
+        <div class="privacy-card">
+          <h2 data-i18n="privacy.section8Title">8. Security</h2>
+          <ul>
+            <li data-i18n="privacy.section8A">End‑to‑end encryption design: private keys remain on device (Keychain/DPAPI depending on platform)</li>
+            <li data-i18n="privacy.section8B">Authenticated encryption for artifacts and wrapped keys (AES‑GCM, ChaCha20‑Poly1305)</li>
+            <li data-i18n="privacy.section8C">Strong password hashing (Argon2id) and short‑lived access tokens</li>
+            <li data-i18n="privacy.section8D">Rate limiting to prevent pushcode guessing and abuse</li>
+            <li data-i18n="privacy.section8E">Owner‑only authenticated download of artifacts</li>
+          </ul>
+        </div>
+
+        <div class="privacy-card">
+          <h2 data-i18n="privacy.section9Title">9. Your rights</h2>
+          <p data-i18n="privacy.section9Body">
+            Subject to applicable law, you may have the right to access, rectification, erasure, restriction, portability, and objection; to withdraw consent where applicable; and to lodge a complaint with a supervisory authority. To exercise your rights, contact compliance@dolani.ch.
+          </p>
+        </div>
+
+        <div class="privacy-card">
+          <h2 data-i18n="privacy.section10Title">10. Children</h2>
+          <p data-i18n="privacy.section10Body">Pushcode is not intended for children under the age of 16. We do not knowingly collect children’s data.</p>
+        </div>
+
+        <div class="privacy-card">
+          <h2 data-i18n="privacy.section11Title">11. Changes</h2>
+          <p data-i18n="privacy.section11Body">We may update this Privacy Information from time to time. The “Last updated” date will reflect changes.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <a class="brand" href="https://pushcode.io">
+          <img class="brand-logo" src="img/pc_logo_trans_light.svg" alt="Pushcode logo" />
+          <span class="brand-name">pushcode.io</span>
+        </a>
+        <p data-i18n="footer.tagline">Secure file sharing for individuals.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html" data-i18n="privacy.navHome">Home</a>
+        <a href="privacy.html" data-i18n="privacy.navPrivacy">Privacy</a>
+        <a href="terms.html" data-i18n="terms.navTerms">Terms</a>
+        <a href="fair-use.html" data-i18n="terms.navFairUse">Fair Use</a>
+      </div>
+      <div class="footer-meta">
+        <span>
+          <span data-i18n="footer.brandPrefix">pushcode.io is a product of</span>
+          <a href="https://dolani.ch" target="_blank" rel="noopener noreferrer" data-i18n="footer.brandLink">dolani GmbH</a>.
+        </span>
+        <span data-i18n="footer.copyright">© 2025 dolani GmbH - from Tsüri🇨🇭🇨🇭 with ❤️</span>
+        <span data-i18n="footer.availability">Available on iOS, iPadOS, macOS, Windows, Linux CLI, and web.</span>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
